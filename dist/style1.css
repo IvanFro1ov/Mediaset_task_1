@@ -1,0 +1,100 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+  font-style: normal;
+  color: #000000;
+  background-color: #f4f4f4;
+}
+
+.main__cover {
+  width: 100%;
+  max-height: 398px;
+  object-fit: cover;
+}
+
+.main {
+  width: 100%;
+  max-width: 1800px;
+  background-color: #fff;
+  margin: 30px;
+  margin-top: 44px;
+  margin-bottom: 49px;
+}
+
+.main__hero {
+  max-width: 985px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.main__hero__title {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.main__hero__time {
+  font-size: 13px;
+  line-height: 22px;
+  font-style: italic;
+  color: #909599;
+}
+
+.main__hero__like {
+  display: flex;
+  align-items: center;
+}
+
+.main__hero__like__text {
+  margin: 0;
+  margin-left: 5px;
+}
+
+.main__hero__solid-line {
+  width: 100%;
+  height: 1px;
+  background-color: #99d150;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.main__hero__hashtag {
+  display: inline-block;
+  color: #666565;
+  padding: 7px 10px;
+  background-color: rgba(141, 190, 80, 0.5019607843);
+  border-radius: 4px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+}
+.main__hero__hashtag:last-child {
+  margin: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .main__hero__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .main__hero__solid-line {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .main__hero__hashtag {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .main__hero__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  padding-top: 182px;
+  font-family: "Ubuntu", sans-serif;
+  background: #f4f4f4;
+  margin: 0 30px;
+  overflow-x: hidden;
+}
+
+.block__contents {
+  display: grid;
+  grid-template-columns: repeat(4, 450px);
+  gap: 20px;
+}
+
+.block__content {
+  width: 450px;
+  height: 472px;
+  background: white;
+  border-radius: 4px;
+  position: relative;
+}
+@media (max-width: 768px) {
+  .block__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.block__content__image {
+  position: relative;
+  background-image: url(../img/image\ 23.png);
+  background-repeat: no-repeat;
+  margin: 10px 10px 0px 10px;
+}
+@media (max-width: 768px) {
+  .block__content__image {
+    margin: 10px 10px 0 10px;
+  }
+}
+.block__content__image .hashtag {
+  display: inline-block;
+  color: #ffffff;
+  padding: 7px 10px;
+  background-color: rgba(141, 190, 80, 0.5019607843);
+  border-radius: 4px;
+  margin: 207px 0px 8px 8px;
+}
+
+.block__content__title {
+  font-size: 18px;
+  line-height: 20.68px;
+  font-weight: bold;
+  padding: 21px 0px 8px 16px;
+}
+
+.block__content__text {
+  font-size: 15px;
+  line-height: 22px;
+  padding: 74px 0px 8px 16px;
+  color: #666565;
+  font-style: normal;
+  width: 411px;
+  height: 44px;
+}
+
+.block__content__info {
+  display: flex;
+  align-items: center;
+  width: 421.2px;
+  height: 23px;
+  margin: 10px 0px 8px 16px;
+}
+
+.block__content__info__data {
+  font-size: 13px;
+  line-height: 22px;
+  color: #909599;
+  font-style: italic;
+}
+
+.block__content__info__likes {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.block__content__info__likes p {
+  font-size: 12px;
+  color: #909599;
+  line-height: 22px;
+  font-style: normal;
+  margin-left: 5.3px;
+  width: 14.63px;
+  height: 22px;
+}
+
+@media screen and (max-width: 1440px) {
+  .block__contents {
+    grid-template-columns: repeat(3, 450px);
+    max-width: 1440px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .block__contents {
+    grid-template-columns: repeat(2, 450px);
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .block__contents {
+    grid-template-columns: 450px;
+    max-width: 425px;
+  }
+}

@@ -1,0 +1,99 @@
+$color_1: #000000;
+$color_2: #909599;
+$color_3: #666565;
+$font-family_1: "Ubuntu", sans-serif;
+$background-color_1: #f4f4f4;
+$background-color_2: #fff;
+$background-color_3: #99d150;
+$background-color_4: #8dbe5080;
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: $font-family_1;
+  font-size: 15px;
+  line-height: 22px;
+  font-style: normal;
+  color: $color_1;
+  background-color: $background-color_1;
+}
+.main__cover {
+  width: 100%;
+  max-height: 398px;
+  object-fit: cover;
+}
+.main {
+  width: 100%;
+  max-width: 1800px;
+  background-color: $background-color_2;
+  margin: 30px;
+  margin-top: 44px;
+  margin-bottom: 49px;
+}
+.main__hero {
+  max-width: 985px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+.main__hero__title {
+  font-size: 38px;
+  line-height: 44px;
+  font-weight: 500;
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+.main__hero__time {
+  font-size: 13px;
+  line-height: 22px;
+  font-style: italic;
+  color: $color_2;
+}
+.main__hero__like {
+  display: flex;
+  align-items: center;
+}
+.main__hero__like__text {
+  margin: 0;
+  margin-left: 5px;
+}
+.main__hero__solid-line {
+  width: 100%;
+  height: 1px;
+  background-color: $background-color_3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.main__hero__hashtag {
+  display: inline-block;
+  color: $color_3;
+  padding: 7px 10px;
+  background-color: $background-color_4;
+  border-radius: 4px;
+  margin-right: 7px;
+  margin-bottom: 7px;
+  &:last-child {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main__hero__title {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .main__hero__solid-line {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .main__hero__hashtag {
+    margin-bottom: 5px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .main__hero__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
